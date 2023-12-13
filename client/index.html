@@ -4,21 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://sdk.mercadopago.com/js/v2"></script>
     <title>Document</title>
   </head>
   <body>
-    <section>
-      <h3>Producto: <span id="product-description">Un Libro</span></h3>
-
-      <h3>Price: $<span id="unit-price">1</span></h3>
-
-      <h3>Quantity: <span id="quantity">1</span></h3>
-
-      <button id="checkout-btn">Checkout</button>
-    </section>
-
-    <div id="button-checkout"></div>
-    <script src="index.js"></script>
+    <div class="card-product-container">
+      <div class="card-product">
+        <div class="card">
+          <img
+            src="https://res.cloudinary.com/pabcode/image/upload/v1699871193/e-commerce/mopgcvdiepr8axkazmcp.png"
+            alt="bananita-pic"
+          />
+          <h3 class="name">BANANITA</h3>
+          <p class="price">100 $</p>
+          <button id="checkout-btn">Comprar</button>
+          <div id="wallet_container"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
